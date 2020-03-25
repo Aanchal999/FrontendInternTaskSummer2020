@@ -1,0 +1,74 @@
+<!-- THE BOILERPLATE SHOULD NOT BE REMOVED -->
+<!-- Proper naming convention should be used while naming id attributes. -->
+<!-- ADDING A SUCCESS PAGE FOR THE SAME WILL BOOST YOUR CHANCES -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <script src="main.js"></script>
+</head>
+<body>
+<img src="https://incubateind.com/images/IncubateIND%20Black.png" class="logo" alt="">
+  <!-- Beautify This -->
+  <div id="id01" class="log-form">
+  	<!--heading-->
+   <h1 align="center" style="color:#4CAF50;">WELCOME</h2>
+   <h2 id="special">Enter your details</h2><br>
+   <!--login form-->
+        <form>
+    	<table>
+     <tr>
+      	<td><label> Username:</td>
+      	<td><input type="text" title="username" placeholder="username" required /></td>
+      </label>
+     </tr>
+     <tr> 
+      <td><label>Email:</td>
+      <td><input type="email" title="email" placeholder="email"required ></td>
+      </label>
+     </tr>
+     <tr> 
+      	<td><label>Password:</td>
+      	<td>  <input type="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"placeholder="password" required></td>
+      </label>
+     </tr> 
+    <tr> 
+      <td><label>Phone Number:</td>
+      <td><input type="tel" id="phone" name="phone"
+       pattern="[0-9]{10}" placeholder="phone Number"required> </td>
+      </label>
+     </tr> 
+   </table>
+      <p>Age:
+      <input type="radio" id="above" name="age" value="above" required>
+      <label for="above">Above 18</label>
+      <input type="radio" id="below" name="age" value="below" required>
+      <label for="below">Below 18</label>
+     <br>
+     <br>
+      <button align= "center" type="submit" class="btn" onclick="return Validate()">Submit</button>
+     </p>
+     <table>
+     	<tr>
+     	<td><label>Sign up using</label></td>
+     <td><a href="https://www.facebook.com/campaign/landing.php?campaign_id=1653993517&extra_1=s%7Cc%7C355887219965%7Ce%7Cfacebook%20login%7C&placement=&creative=355887219965&keyword=facebook%20login&partner_id=googlesem&extra_2=campaignid%3D1653993517%26adgroupid%3D63066388443%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-1409285535%26loc_physical_ms%3D9040189%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAjw3-bzBRBhEiwAgnnLCrx5GFXZGbv7wMMyTe760fJzAPOFXtJwrSI1zOopZmNQsh-jeLzKfRoCe28QAvD_BwE"><img id="fb" src="https://img.icons8.com/dusk/2x/facebook-new.png"></a></td>
+     <td><a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&flowName=GlifWebSignIn&flowEntry=AddSession"><img id="gmail" src="https://img.icons8.com/plasticine/2x/gmail.png"></a></td>
+ </tr>
+     </table>
+  </form>
+  <!--message that appears when password is not enterd in right format-->
+  </div>
+    <div id="message">
+  <h3>Password must contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+</div>
+  <!-- Beautify Ends -->
+</body>
+</html>

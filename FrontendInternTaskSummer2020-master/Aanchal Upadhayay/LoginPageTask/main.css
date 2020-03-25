@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+/*bacgroung Styling*/
+body {
+  background: url(http://www.allwhitebackground.com/images/6/Animated-Powerpoint-Background-Free.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "open sans", helvetica, arial, sans;
+}
+/*logo syling*/
+.logo{
+  width: 250px;
+   position: absolute;
+  top: 10%;
+  left: 20%;
+
+}
+/* form styling*/
+.log-form {
+  width: 100%;
+  min-width: 320px;
+  max-width: 450px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+h2 {
+  text-align: left;
+}
+.log-form {
+  width: 500px;
+  clear:both;
+  padding: 2em;
+  -webkit-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  -moz-box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+  box-shadow: 4px -1px 53px -7px rgba(138, 138, 138, 0.30);
+}
+
+form {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+/* effect for submit buttons*/
+button{
+  transition-duration: 0.4s;
+  text-align: center;
+  background:#4CAF50;/* green*/
+  color: white;
+  padding: 10px 137px;
+  border: 1px;
+  border-radius: 12px;
+  display: inline-block;
+  }
+  button:hover{
+    text-align: center;
+  background: #e7e7e7;/* grey*/
+  color: black;
+  padding: 10px 137px;
+  border: 2px black;
+  border-radius: 12px;
+
+  display: inline-block;
+  }
+  /* facebook and gmail logo*/
+#fb{
+  width: 40px;
+}
+#gmail{
+  width: 40px;
+}
+/*styling of the message if password entered is not according to the format*/
+#message {
+  display:none;
+  background: #f1f1f1;
+  color: #000;
+  position: relative;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#message p {
+  padding: 10px 35px;
+  font-size: 18px;
+}
